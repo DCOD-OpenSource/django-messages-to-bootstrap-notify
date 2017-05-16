@@ -22,10 +22,10 @@ register = template.Library()
 def messages2json(messages):
     """
     Convert user messages to json.
-    Args:
-        messages (django.contrib.settings.MESSAGE_STORAGE): instance of django messages storage.
-    Returns:
-        django.utils.safestring.SafeBytes: django messages converted to JSON.
+    :param messages: instance of django messages storage.
+    :type messages: django.contrib.settings.MESSAGE_STORAGE.
+    :return: django messages converted to JSON.
+    :rtype: django.utils.safestring.SafeBytes.
     """
 
     return mark_safe(dumps([{"type": message.tags, "message": message, } for message in messages if message] if messages else []))

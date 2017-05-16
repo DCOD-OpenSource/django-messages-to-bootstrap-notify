@@ -24,6 +24,35 @@ Add ``"dm2bn"`` to ``settings.INSTALLED_APPS``.
     )
 
 
+Settings
+--------
+``DM2BN_MESSAGES_CUMULATIVE_DELAY``
+    Use cumulative delay to showing message. Defaults to: ``True``.
+
+``DM2BN_MESSAGE_DELAY``
+    Message showing delay (in seconds). Defaults to: ``3``.
+
+``DM2BN_MESSAGE_DELAY_FACTOR``
+    Message showing delay factor (in chars per second). Defaults to: ``8``.
+
+``DM2BN_MESSAGE_ICON``
+    Message icon css classes. Defaults to: ``"fa fa-exclamation-circle"``.
+
+``DM2BN_MESSAGE_DEFAULT_SETTING``
+    Message showing default settings. See documentation (http://bootstrap-notify.remabledesigns.com/#documentation-settings). Defaults to:
+
+.. code-block:: python
+
+    {
+        "allow_dismiss": True,
+        "placement": {
+            "from": "top",
+            "align": "right",
+        },
+        "delay": 3,
+        "mouse_over": "pause",
+    }
+
 Licensing
 ---------
 django-messages-to-bootstrap-notify uses the MIT license. Please check the MIT-LICENSE file for more details.

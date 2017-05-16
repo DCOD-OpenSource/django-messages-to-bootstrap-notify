@@ -9,9 +9,11 @@ dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.js
 dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.map
 dm2bn/static/dm2bn/vendor/jquery/LICENSE.txt
 dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css.map
 dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.css
 dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.map
 dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css.map
 dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.css
 dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.map
 dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
@@ -27,3 +29,7 @@ dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.min.js
 dm2bn/static/dm2bn/vendor/bootstrap-notify/LICENSE.txt
 dm2bn/static/dm2bn/vendor/striptags/striptags.js
 dm2bn/static/dm2bn/vendor/striptags/LICENSE
+dm2bn/static/dm2bn/vendor/underscore/underscore.js
+dm2bn/static/dm2bn/vendor/underscore/underscore-min.js
+dm2bn/static/dm2bn/vendor/underscore/underscore-min.map
+dm2bn/static/dm2bn/vendor/underscore/LICENSE.txt

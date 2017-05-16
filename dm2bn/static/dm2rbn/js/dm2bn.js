@@ -6,10 +6,12 @@
 function calculateDelay(message) {
     /*
         Calculate message showing delay based on message length and reading symbols per second factor.
+        @param {string} message. Message to calculate delay for.
+        @return {number} message. Showing delay (in milliseconds).
     */
 
     var factor = (typeof messageDelayFactor === "undefined" ? 8: messageDelayFactor),
-        delay = (typeof messageDelay === "undefined" ? 3000: messageDelay),
+        delay = (typeof messageDelay === "undefined" ? 3000: messageDelay * 1000),
         messageLength = striptags(message).length;
 
     if (((messageLength / factor) * 1000) > delay) {
@@ -22,10 +24,22 @@ function calculateDelay(message) {
 
 function showMessage(message, type, kwargs) {
     /*
-        Show one message.
+        Show message.
+        @param {string} message. Message to show.
+        @param {string} type. Message type.
+        @param {object} kwargs. Additional message settings.
     */
+
     var delay = calculateDelay(message),
-        settings = (typeof messageDefaultSettings === "undefined" ? {allow_dismiss: true, placement: {from: "top", align: "right"}, delay: (typeof messageDelay === "undefined" ? 3000: messageDelay), mouse_over: "pause"}: messageDefaultSettings);
+        settings = (typeof messageDefaultSettings === "undefined" ? {
+            allow_dismiss: true,
+            placement: {
+                from: "top",
+                align: "right"
+            },
+            delay: (typeof messageDelay === "undefined" ? 3000: messageDelay * 1000),
+            mouse_over: "pause"
+        }: messageDefaultSettings);
 
     // update settings
     settings.type = type;
@@ -43,7 +57,11 @@ function showMessage(message, type, kwargs) {
 
 
 function showMessages(messages) {
-    /* show messages */
+    /*
+        Show messages.
+        @param {Array} messages. Messages to show.
+    */
+
     var delay = 0;
 
     _.each(messages, function (message) {
