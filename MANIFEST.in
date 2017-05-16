@@ -1,0 +1,6 @@
+# django-messages-to-remarkable-bootstrap-notify
+# MANIFEST.in
+
+include README.rst
+include MIT-LICENSE
+include AUTHORS
