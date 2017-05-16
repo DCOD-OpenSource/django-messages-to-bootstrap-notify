@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-# django-messages-to-remarkable-bootstrap-notify
-# dm2rbn/apps.py
+# django-messages-to-bootstrap-notify
+# dm2bn/apps.py
 
 from __future__ import unicode_literals
 
@@ -15,5 +15,5 @@ __all__ = [
 
 class Config(AppConfig):
 
-    name = "dm2rbn"
-    verbose_name = "Django messages to remarkable-bootstrap-notify"
+    name = "dm2bn"
+    verbose_name = "Django messages to bootstrap-notify"

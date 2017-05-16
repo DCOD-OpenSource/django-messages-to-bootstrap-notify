@@ -1,6 +1,29 @@
-# django-messages-to-remarkable-bootstrap-notify
+# django-messages-to-bootstrap-notify
 # MANIFEST.in
 
 include README.rst
 include MIT-LICENSE
 include AUTHORS
+dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.js
+dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.js
+dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.map
+dm2bn/static/dm2bn/vendor/jquery/LICENSE.txt
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.css
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.map
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.css
+dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.map
+dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
+dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
+dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
+dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.js
+dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.min.js
+dm2bn/static/dm2bn/vendor/bootstrap/LICENSE
+dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.js
+dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.min.js
+dm2bn/static/dm2bn/vendor/bootstrap-notify/LICENSE.txt
+dm2bn/static/dm2bn/vendor/striptags/striptags.js
+dm2bn/static/dm2bn/vendor/striptags/LICENSE
