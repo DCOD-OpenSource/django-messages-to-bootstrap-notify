@@ -10,6 +10,9 @@ clear:
 build:
 	./setup.py bdist_wheel sdist
 
+register:
+	./setup.py bdist_wheel sdist register
+
 upload:
 	./setup.py bdist_wheel sdist upload
 
