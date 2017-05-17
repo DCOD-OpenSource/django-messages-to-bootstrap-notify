@@ -8,6 +8,9 @@ include dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.js
 include dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.js
 include dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.map
 include dm2bn/static/dm2bn/vendor/jquery/LICENSE.txt
+include dm2bn/static/dm2bn/vendor/font-awesome/css/font-awesome.css
+include dm2bn/static/dm2bn/vendor/font-awesome/css/font-awesome.min.css
+include dm2bn/static/dm2bn/vendor/font-awesome/css/LICENSE
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css.map
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.css
@@ -24,6 +27,16 @@ include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.w
 include dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.js
 include dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.min.js
 include dm2bn/static/dm2bn/vendor/bootstrap/LICENSE
+include dm2bn/static/dm2bn/vendor/font-awesome/css/font-awesome.css
+include dm2bn/static/dm2bn/vendor/font-awesome/css/font-awesome.min.css
+include dm2bn/static/dm2bn/vendor/font-awesome/css/LICENSE
+include dm2bn/static/dm2bn/vendor/font-awesome/fonts/FontAwesome.otf
+include dm2bn/static/dm2bn/vendor/font-awesome/fonts/fontawesome-webfont.eot
+include dm2bn/static/dm2bn/vendor/font-awesome/fonts/fontawesome-webfont.svg
+include dm2bn/static/dm2bn/vendor/font-awesome/fonts/fontawesome-webfont.ttf
+include dm2bn/static/dm2bn/vendor/font-awesome/fonts/fontawesome-webfont.woff
+include dm2bn/static/dm2bn/vendor/font-awesome/fonts/fontawesome-webfont.woff2
+include dm2bn/static/dm2bn/vendor/font-awesome/fonts/LICENSE.txt
 include dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.js
 include dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.min.js
 include dm2bn/static/dm2bn/vendor/bootstrap-notify/LICENSE.txt

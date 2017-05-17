@@ -69,9 +69,10 @@ Requirements:
 
  - jquery (https://jquery.com/)
  - bootstrap (https://getbootstrap.com/)
+ - Font Awesome (http://fontawesome.io/)
  - bootstrap-notify (https://github.com/mouse0270/bootstrap-notify/)
- - striptags (https://github.com/ericnorris/striptags/)
- - underscore (http://underscorejs.org/)
+ - striptags.js (https://github.com/ericnorris/striptags/)
+ - underscore.js (http://underscorejs.org/)
 
 Attention
 ---------
