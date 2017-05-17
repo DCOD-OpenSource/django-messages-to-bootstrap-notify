@@ -48,3 +48,5 @@ include dm2bn/static/dm2bn/vendor/underscore/underscore-min.map
 include dm2bn/static/dm2bn/vendor/underscore/LICENSE.txt
 include dm2bn/templates/dm2bn/includes/dm2bn_static.html
 include dm2bn/templates/dm2bn/templatetags/dm2bn_settings.html
+include dm2bn/static/dm2bn/js/dm2bn.js
+include dm2bn/static/dm2bn/js/dm2bn.min.js
