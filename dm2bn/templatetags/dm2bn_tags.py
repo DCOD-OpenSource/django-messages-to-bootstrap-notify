@@ -9,9 +9,18 @@ from json import dumps
 from django import template
 from django.utils.safestring import mark_safe
 
+from dm2bn.settings import (
+    MESSAGES_CUMULATIVE_DELAY,
+    MESSAGE_DELAY,
+    MESSAGE_DELAY_FACTOR,
+    MESSAGE_ICON,
+    MESSAGE_DEFAULT_SETTING,
+)
+
 
 __all__ = [
     "messages2json",
+    "dm2bn_settings",
 ]
 
 
@@ -28,4 +37,21 @@ def messages2json(messages):
     :rtype: django.utils.safestring.SafeBytes.
     """
 
-    return mark_safe(dumps([{"type": message.tags, "message": message, } for message in messages if message] if messages else []))
+    return mark_safe(dumps([{"type": message.tags, "message": message.message, } for message in messages if message] if messages else []))
+
+
+@register.inclusion_tag("dm2bn/templatetags/dm2bn_settings.html")
+def dm2bn_settings():
+    """
+    Configure django messages to bootstrap-notify.
+    :return: context for template.
+    :rtype: dict.
+    """
+
+    return {
+        "MESSAGES_CUMULATIVE_DELAY": mark_safe(dumps(MESSAGES_CUMULATIVE_DELAY)),
+        "MESSAGE_DELAY": MESSAGE_DELAY,
+        "MESSAGE_DELAY_FACTOR": MESSAGE_DELAY_FACTOR,
+        "MESSAGE_ICON": mark_safe(dumps(MESSAGE_ICON)),
+        "MESSAGE_DEFAULT_SETTING": mark_safe(dumps(MESSAGE_DEFAULT_SETTING)),
+    }

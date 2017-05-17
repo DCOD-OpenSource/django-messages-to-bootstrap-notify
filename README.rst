@@ -15,14 +15,73 @@ Installation
 
 Configuration
 -------------
-Add ``"dm2bn"`` to ``settings.INSTALLED_APPS``.
+Add ``"django.contrib.messages"`` and ``"dm2bn"`` to ``settings.INSTALLED_APPS``.
 
 .. code-block:: python
 
     INSTALLED_APPS += (
+        "django.contrib.messages",
         "dm2bn",
     )
 
+Add ``"django.contrib.messages.middleware.MessageMiddleware"`` to ``settings.MIDDLEWARE``.
+
+.. code-block:: python
+
+    MIDDLEWARE += (
+        "django.contrib.messages.middleware.MessageMiddleware",
+    )
+
+Add ``"django.contrib.messages.context_processors.messages"`` to ``settings.TEMPLATE_CONTEXT_PROCESSORS``.
+
+.. code-block:: python
+
+    TEMPLATE_CONTEXT_PROCESSORS += (
+        "django.contrib.messages.context_processors.messages",
+    )
+
+And configure messages storage.
+
+.. code-block:: python
+
+    MESSAGE_STORAGE = "django.contrib.messages.storage.fallback.FallbackStorage"
+
+Load ``"dm2bn_tags"`` to your base template, load vendor static by including ``dm2bn/includes/dm2bn_static.html`` template, place bootstrap-notify settings in template by calling ``{% dm2bn_settings %}`` and call ``showMessages`` function.
+
+For example:
+
+.. code-block:: django
+
+    {% load dm2bn_tags %}
+
+    {% include "dm2bn/includes/dm2bn_static.html" %}
+    {% dm2bn_settings %}
+    <script type="text/javascript">
+        $(function () {
+            // show messages
+            showMessages({{ messages|messages2json }});
+        });
+    </script>
+
+If you already use some part of vendor static, manual add missing requirements to you template.
+
+Requirements:
+
+ - jquery (https://jquery.com/)
+ - bootstrap (https://getbootstrap.com/)
+ - bootstrap-notify (https://github.com/mouse0270/bootstrap-notify/)
+ - striptags (https://github.com/ericnorris/striptags/)
+ - underscore (http://underscorejs.org/)
+
+Attention
+---------
+For pretty looking error messages add ``"danger"`` to ``extra_tags`` in ``messages.error`` calls.
+
+For example:
+
+.. code-block:: python
+
+    messages.error(request, "Something happened wrong :(", "danger")
 
 Settings
 --------

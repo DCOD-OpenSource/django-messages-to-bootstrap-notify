@@ -4,32 +4,34 @@
 include README.rst
 include MIT-LICENSE
 include AUTHORS
-dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.js
-dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.js
-dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.map
-dm2bn/static/dm2bn/vendor/jquery/LICENSE.txt
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css.map
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.css
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.map
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css.map
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.css
-dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.map
-dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
-dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
-dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
-dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
-dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
-dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.js
-dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.min.js
-dm2bn/static/dm2bn/vendor/bootstrap/LICENSE
-dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.js
-dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.min.js
-dm2bn/static/dm2bn/vendor/bootstrap-notify/LICENSE.txt
-dm2bn/static/dm2bn/vendor/striptags/striptags.js
-dm2bn/static/dm2bn/vendor/striptags/LICENSE
-dm2bn/static/dm2bn/vendor/underscore/underscore.js
-dm2bn/static/dm2bn/vendor/underscore/underscore-min.js
-dm2bn/static/dm2bn/vendor/underscore/underscore-min.map
-dm2bn/static/dm2bn/vendor/underscore/LICENSE.txt
+include dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.js
+include dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.js
+include dm2bn/static/dm2bn/vendor/jquery/jquery-3.2.1.min.map
+include dm2bn/static/dm2bn/vendor/jquery/LICENSE.txt
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css.map
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.css
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.map
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css.map
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.css
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.map
+include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
+include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
+include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
+include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+include dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.js
+include dm2bn/static/dm2bn/vendor/bootstrap/js/bootstrap.min.js
+include dm2bn/static/dm2bn/vendor/bootstrap/LICENSE
+include dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.js
+include dm2bn/static/dm2bn/vendor/bootstrap-notify/bootstrap-notify.min.js
+include dm2bn/static/dm2bn/vendor/bootstrap-notify/LICENSE.txt
+include dm2bn/static/dm2bn/vendor/striptags/striptags.js
+include dm2bn/static/dm2bn/vendor/striptags/LICENSE
+include dm2bn/static/dm2bn/vendor/underscore/underscore.js
+include dm2bn/static/dm2bn/vendor/underscore/underscore-min.js
+include dm2bn/static/dm2bn/vendor/underscore/underscore-min.map
+include dm2bn/static/dm2bn/vendor/underscore/LICENSE.txt
+include dm2bn/templates/dm2bn/includes/dm2bn_static.html
+include dm2bn/templates/dm2bn/templatetags/dm2bn_settings.html
