@@ -11,7 +11,7 @@ A django-messages-to-bootstrap-notify documentation
 Installation
 ------------
 * Obtain your copy of source code from the git repository: ``git clone https://github.com/DCOD-OpenSource/django-messages-to-bootstrap-notify.git``. Or download the latest release from https://github.com/DCOD-OpenSource/django-messages-to-bootstrap-notify/tags/.
-* Run ``python ./setup.py install`` from repository source tree or unpacked archive. Or use pip: ``pip install django-messages-to-bootstrap-notify``.
+* Run ``python ./setup.py install`` from repository source tree or the unpacked archive. Or use pip: ``pip install django-messages-to-bootstrap-notify``.
 
 Configuration
 -------------
@@ -86,19 +86,19 @@ For example:
 Settings
 --------
 ``DM2BN_MESSAGES_CUMULATIVE_DELAY``
-    Use cumulative delay to showing message. Defaults to: ``True``.
+    Use cumulative delay to showing a message. Defaults to: ``True``.
 
 ``DM2BN_MESSAGE_DELAY``
-    Message showing delay (in seconds). Defaults to: ``3``.
+    A message showing delay (in seconds). Defaults to: ``3``.
 
 ``DM2BN_MESSAGE_DELAY_FACTOR``
-    Message showing delay factor (in chars per second). Defaults to: ``8``.
+    A message showing delay factor (in chars per second). Defaults to: ``8``.
 
 ``DM2BN_MESSAGE_ICON``
     Message icon css classes. Defaults to: ``"fa fa-exclamation-circle"``.
 
 ``DM2BN_MESSAGE_DEFAULT_SETTING``
-    Message showing default settings. See documentation (http://bootstrap-notify.remabledesigns.com/#documentation-settings). Defaults to:
+    A message showing default settings. See documentation (http://bootstrap-notify.remabledesigns.com/#documentation-settings). Defaults to:
 
 .. code-block:: python
 
