@@ -14,11 +14,11 @@ include dm2bn/static/dm2bn/vendor/font-awesome/css/LICENSE
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.css.map
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.css
-include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.map
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap.min.css.map
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.css.map
 include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.css
-include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.map
+include dm2bn/static/dm2bn/vendor/bootstrap/css/bootstrap-theme.min.css.map
 include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
 include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
 include dm2bn/static/dm2bn/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
