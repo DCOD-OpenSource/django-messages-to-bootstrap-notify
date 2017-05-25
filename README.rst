@@ -15,36 +15,16 @@ Installation
 
 Configuration
 -------------
-Add ``"django.contrib.messages"`` and ``"dm2bn"`` to ``settings.INSTALLED_APPS``.
+Enable and configure `Django messages framework <https://docs.djangoproject.com/en/1.11/ref/contrib/messages/>`_.
+
+Add ``"dm2bn"`` to ``settings.INSTALLED_APPS``.
 
 .. code-block:: python
 
     INSTALLED_APPS += (
-        "django.contrib.messages",
         "dm2bn",
     )
 
-Add ``"django.contrib.messages.middleware.MessageMiddleware"`` to ``settings.MIDDLEWARE``.
-
-.. code-block:: python
-
-    MIDDLEWARE += (
-        "django.contrib.messages.middleware.MessageMiddleware",
-    )
-
-Add ``"django.contrib.messages.context_processors.messages"`` to ``settings.TEMPLATE_CONTEXT_PROCESSORS``.
-
-.. code-block:: python
-
-    TEMPLATE_CONTEXT_PROCESSORS += (
-        "django.contrib.messages.context_processors.messages",
-    )
-
-And configure messages storage.
-
-.. code-block:: python
-
-    MESSAGE_STORAGE = "django.contrib.messages.storage.fallback.FallbackStorage"
 
 Load ``"dm2bn_tags"`` to your base template, load vendor static by including ``dm2bn/includes/dm2bn_static.html`` template, place bootstrap-notify settings in template by calling ``{% dm2bn_settings %}`` and call ``showMessages`` function.
 
