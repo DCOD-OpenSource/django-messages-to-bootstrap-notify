@@ -23,12 +23,13 @@
 
     };
 
+    /**
+     * Calculate message showing delay based on message length and reading symbols per second factor.
+     *
+     * @param {string} message. Message to calculate delay for.
+     * @return {number} message. Showing delay (in milliseconds).
+     */
     function calculateDelay(message) {
-        /*
-            Calculate message showing delay based on message length and reading symbols per second factor.
-            @param {string} message. Message to calculate delay for.
-            @return {number} message. Showing delay (in milliseconds).
-        */
 
         var messageLength = striptags(message).length;
 
@@ -39,20 +40,19 @@
         }
     }
 
+    /**
+     * Show message.
+     * @param {string} message. Message to show.
+     * @param {string} type. Message type.
+     * @param {object} kwargs. Additional message settings.
+     */
     function showMessage(message, type, kwargs) {
-        /*
-            Show message.
-            @param {string} message. Message to show.
-            @param {string} type. Message type.
-            @param {object} kwargs. Additional message settings.
-        */
-
         var delay = calculateDelay(message),
             config = settings.defaultSettings;
 
         // update settings
         config.type = type;
-        _.extend(config, kwargs);
+        $.extend(config, kwargs);
         config.delay = delay;
 
         $.notify({  // show message
@@ -61,24 +61,25 @@
         }, config);
     }
 
-    $.showMessages = function(messages) {
-        /*
-            Show messages.
-            @param {Array} messages. Messages to show.
-        */
-
+    /**
+     * Show messages.
+     * @param {Array} messages. Messages to show.
+     * @param {object} kwargs. Additional messages settings.
+     */
+    $.showMessages = function(messages, kwargs) {
         var delay = 0;
 
-        _.each(messages, function (message) {
+        $.each(messages, function (i, message) {
             // use cumulative delay
             if (settings.cumulativeDelay) {
                 delay += calculateDelay(message.message);
             } else {
                 delay = calculateDelay(message.message);
             }
-            showMessage(message.message, message.type, {
+            $.extend(kwargs, {
                 delay: delay
             });
+            showMessage(message.message, message.type, kwargs);
         });
     }
 

@@ -52,7 +52,6 @@ Requirements:
  - `Font Awesome <http://fontawesome.io/>`_
  - `bootstrap-notify <https://github.com/mouse0270/bootstrap-notify/>`_
  - `striptags.js <https://github.com/ericnorris/striptags/>`_
- - `underscore.js <http://underscorejs.org/>`_
  - `bootstrap-notify-simple-wrapper <https://github.com/DCOD-OpenSource/bootstrap-notify-simple-wrapper/>`_
 
 Attention
