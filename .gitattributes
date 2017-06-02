@@ -1,0 +1,4 @@
+# django-messages-to-bootstrap-notify
+# .gitattributes
+
+dm2bn/static/dm2bn/vendor/* linguist-vendored

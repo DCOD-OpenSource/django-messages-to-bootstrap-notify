@@ -1,6 +1,7 @@
 // bootstrap-notify-simple-wrapper
 // bootstrap-notify-simple-wrapper.js
 
+
 "use strict";
 
 (function($){
@@ -27,10 +28,9 @@
      * Calculate message showing delay based on message length and reading symbols per second factor.
      *
      * @param {string} message. Message to calculate delay for.
-     * @return {number} message. Showing delay (in milliseconds).
+     * @return {number}. Showing delay (in milliseconds).
      */
     function calculateDelay(message) {
-
         var messageLength = striptags(message).length;
 
         if (((messageLength / settings.delayFactor) * 1000) > settings.delay) {
@@ -46,20 +46,26 @@
      * @param {string} type. Message type.
      * @param {object} kwargs. Additional message settings.
      */
-    function showMessage(message, type, kwargs) {
-        var delay = calculateDelay(message),
+    $.showMessage = function(message, type, kwargs) {
+        var kwargs = (typeof kwargs === "undefined" ? {}: kwargs),
+            delay = calculateDelay(message),
             config = settings.defaultSettings;
 
         // update settings
         config.type = type;
         $.extend(config, kwargs);
-        config.delay = delay;
+        if (typeof kwargs.delay === "undefined") {
+            config.delay = delay;  // update delay if delay not defined
+        }
+        if (config.delay < delay) {
+            config.delay = delay;  // update delay by calculated delay because calculated delay is always right
+        }
 
         $.notify({  // show message
             message: message,
             icon: settings.icon
         }, config);
-    }
+    };
 
     /**
      * Show messages.
@@ -67,7 +73,8 @@
      * @param {object} kwargs. Additional messages settings.
      */
     $.showMessages = function(messages, kwargs) {
-        var delay = 0;
+        var kwargs = (typeof kwargs === "undefined" ? {}: kwargs),
+            delay = 0;
 
         $.each(messages, function (i, message) {
             // use cumulative delay
@@ -79,8 +86,8 @@
             $.extend(kwargs, {
                 delay: delay
             });
-            showMessage(message.message, message.type, kwargs);
+            $.showMessage(message.message, message.type, kwargs);
         });
-    }
+    };
 
 })(jQuery);
