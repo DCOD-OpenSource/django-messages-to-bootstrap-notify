@@ -17,6 +17,22 @@ from dm2bn.settings import (
     MESSAGE_DEFAULT_SETTING,
 )
 
+# py3 compatibility layer
+try:
+    unicode = unicode
+except NameError:
+    # "unicode" is undefined, must be Python 3
+    str = str
+    unicode = str
+    bytes = bytes
+    basestring = (str, bytes)
+else:
+    # "unicode" exists, must be Python 2
+    str = str
+    unicode = unicode
+    bytes = str
+    basestring = basestring
+
 
 __all__ = [
     "messages2json",
@@ -37,7 +53,7 @@ def messages2json(messages):
     :rtype: django.utils.safestring.SafeBytes.
     """
 
-    return mark_safe(dumps([{"type": message.tags, "message": message.message, } for message in messages if message] if messages else []))
+    return mark_safe(dumps([{"type": message.tags, "message": unicode(message.message), } for message in messages if message] if messages else []))
 
 
 @register.inclusion_tag("dm2bn/templatetags/dm2bn_settings.html")

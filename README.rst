@@ -15,7 +15,7 @@ Installation
 
 Configuration
 -------------
-Enable and configure `Django messages framework <https://docs.djangoproject.com/en/1.11/ref/contrib/messages/>`_.
+Enable and configure `Django Messages Framework <https://docs.djangoproject.com/en/1.11/ref/contrib/messages/>`_.
 
 Add ``"dm2bn"`` to ``settings.INSTALLED_APPS``.
 
